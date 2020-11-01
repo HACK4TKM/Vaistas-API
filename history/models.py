@@ -14,7 +14,8 @@ class History(models.Model):
     height = models.FloatField()
     heart_beat_rate = models.IntegerField()
     eye_blink_rate = models.IntegerField()
-    emotion_speech_rate = models.IntegerField()
+    emotion = models.CharField(max_length=10)
+    speech_rate = models.IntegerField()
 
     def __str__(self):
         return self.name
